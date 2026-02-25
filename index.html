@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Привет, мир</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <header class="profile-header" role="banner">
+    <div class="profile-header__inner">
+      <a
+        href="/"
+        class="profile-header__logo-link"
+        aria-label="Перейти на главную страницу"
+        tabindex="0"
+      >
+        <img
+          src="assets/img/logo.svg"
+          class="profile-header__logo"
+          alt="Логотип RubyHome"
+          width="120"
+          height="40"
+          loading="lazy"
+        />
+      </a>
+
+      <div class="profile-header__right">
+        <nav
+          class="profile-header__nav"
+          role="navigation"
+          aria-label="Основная навигация"
+        >
+          <ul class="profile-header__list">
+            <li class="profile-header__item">
+              <a
+                href="#home"
+                class="profile-header__link profile-header__link--active"
+                tabindex="0"
+              >
+                Home
+              </a>
+            </li>
+            <li class="profile-header__item">
+              <a
+                href="#properties"
+                class="profile-header__link"
+                tabindex="0"
+              >
+                Properties
+              </a>
+            </li>
+            <li class="profile-header__item">
+              <a
+                href="#about"
+                class="profile-header__link"
+                tabindex="0"
+              >
+                About us
+              </a>
+            </li>
+            <li class="profile-header__item">
+              <a
+                href="#reviews"
+                class="profile-header__link"
+                tabindex="0"
+              >
+                Reviews
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="profile-header__button"
+          type="button"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Find the perfect place to stay with your family
+          </h1>
+          <p class="hero__subtitle">
+            Buying a home is a life-changing experience, so shouldn't your real
+            estate agent be a life changer
+          </p>
+          <div class="hero__actions">
+            <button
+              class="hero__button"
+              type="button"
+              aria-label="Leave a request to find the perfect place to stay with your family"
+            >
+              Leave request
+            </button>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <picture class="hero__picture">
+            <img
+              src="assets/img/image.jpg"
+              class="hero__image"
+              alt="Современное стеклянное здание с жёлтым акцентом"
+              width="484"
+              height="615"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="partners" aria-labelledby="partners-title">
+      <div class="partners__inner">
+        <h2 class="partners__title" id="partners-title">
+          Our partners
+        </h2>
+        <ul class="partners__list" aria-label="Партнёры компании">
+          <li class="partners__item">
+            <img
+              src="assets/img/biotech.png"
+              class="partners__logo"
+              alt="Логотип Biotech"
+              width="129"
+              height="70"
+              loading="lazy"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              src="assets/img/express.png"
+              class="partners__logo"
+              alt="Логотип Express"
+              width="202"
+              height="70"
+              loading="lazy"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              src="assets/img/smilehome.png"
+              class="partners__logo"
+              alt="Логотип SmileHome"
+              width="87"
+              height="70"
+              loading="lazy"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              src="assets/img/connect.png"
+              class="partners__logo"
+              alt="Логотип Connect"
+              width="162"
+              height="70"
+              loading="lazy"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              src="assets/img/homebuild.png"
+              class="partners__logo"
+              alt="Логотип Homebuild"
+              width="153"
+              height="70"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="properties" id="properties" aria-labelledby="properties-title">
+      <div class="properties__inner">
+        <h2 class="properties__title" id="properties-title">Popular Properties</h2>
+        <ul class="properties__grid" aria-label="Популярные объекты недвижимости">
+          <li class="properties__item">
+            <article class="property-card">
+              <img
+                src="assets/img/hom1.jpg"
+                class="property-card__image"
+                alt="Capital hill residence — современный двухэтажный дом"
+                width="360"
+                height="320"
+                loading="lazy"
+              />
+              <div class="property-card__content">
+                <h3 class="property-card__title">Capital hill residence</h3>
+                <p class="property-card__address">
+                  <img src="assets/icons/01.svg" class="property-card__address-icon" alt="" width="20" height="20" aria-hidden="true" />
+                  <span>East London</span>
+                </p>
+                <ul class="property-card__params" aria-label="Параметры объекта">
+                  <li class="property-card__param">
+                    <img src="assets/icons/bedroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>6</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/kitchen.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>2</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/bathroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>3</span>
+                  </li>
+                </ul>
+                <div class="property-card__footer">
+                  <span class="property-card__price">$5527.00</span>
+                  <button type="button" class="property-card__button" aria-label="Оставить заявку на Capital hill residence">Leave request</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="properties__item">
+            <article class="property-card">
+              <img
+                src="assets/img/hom2.jpg"
+                class="property-card__image"
+                alt="Picket Fence Realty — ряд современных домов"
+                width="360"
+                height="320"
+                loading="lazy"
+              />
+              <div class="property-card__content">
+                <h3 class="property-card__title">Picket Fence Realty</h3>
+                <p class="property-card__address">
+                  <img src="assets/icons/01.svg" class="property-card__address-icon" alt="" width="20" height="20" aria-hidden="true" />
+                  <span>East London</span>
+                </p>
+                <ul class="property-card__params" aria-label="Параметры объекта">
+                  <li class="property-card__param">
+                    <img src="assets/icons/bedroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>6</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/kitchen.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>2</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/bathroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>3</span>
+                  </li>
+                </ul>
+                <div class="property-card__footer">
+                  <span class="property-card__price">$6727.00</span>
+                  <button type="button" class="property-card__button" aria-label="Оставить заявку на Picket Fence Realty">Leave request</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="properties__item">
+            <article class="property-card">
+              <img
+                src="assets/img/hom3.jpg"
+                class="property-card__image"
+                alt="Banyon Tree Realty — современный дом с террасой"
+                width="360"
+                height="320"
+                loading="lazy"
+              />
+              <div class="property-card__content">
+                <h3 class="property-card__title">Banyon Tree Realty</h3>
+                <p class="property-card__address">
+                  <img src="assets/icons/01.svg" class="property-card__address-icon" alt="" width="20" height="20" aria-hidden="true" />
+                  <span>East London</span>
+                </p>
+                <ul class="property-card__params" aria-label="Параметры объекта">
+                  <li class="property-card__param">
+                    <img src="assets/icons/bedroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>6</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/kitchen.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>2</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/bathroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>3</span>
+                  </li>
+                </ul>
+                <div class="property-card__footer">
+                  <span class="property-card__price">$4327.00</span>
+                  <button type="button" class="property-card__button" aria-label="Оставить заявку на Banyon Tree Realty">Leave request</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="properties__item">
+            <article class="property-card">
+              <img
+                src="assets/img/hom4.jpg"
+                class="property-card__image"
+                alt="Corsair Real Estate — дом с гаражом"
+                width="360"
+                height="320"
+                loading="lazy"
+              />
+              <div class="property-card__content">
+                <h3 class="property-card__title">Corsair Real Estate</h3>
+                <p class="property-card__address">
+                  <img src="assets/icons/01.svg" class="property-card__address-icon" alt="" width="20" height="20" aria-hidden="true" />
+                  <span>East London</span>
+                </p>
+                <ul class="property-card__params" aria-label="Параметры объекта">
+                  <li class="property-card__param">
+                    <img src="assets/icons/bedroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>6</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/kitchen.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>2</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/bathroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>3</span>
+                  </li>
+                </ul>
+                <div class="property-card__footer">
+                  <span class="property-card__price">$4427.00</span>
+                  <button type="button" class="property-card__button" aria-label="Оставить заявку на Corsair Real Estate">Leave request</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="properties__item">
+            <article class="property-card">
+              <img
+                src="assets/img/hom5.jpg"
+                class="property-card__image"
+                alt="Sequoia Real Estate — загородный дом с гаражом"
+                width="360"
+                height="320"
+                loading="lazy"
+              />
+              <div class="property-card__content">
+                <h3 class="property-card__title">Sequoia Real Estate</h3>
+                <p class="property-card__address">
+                  <img src="assets/icons/01.svg" class="property-card__address-icon" alt="" width="20" height="20" aria-hidden="true" />
+                  <span>East London</span>
+                </p>
+                <ul class="property-card__params" aria-label="Параметры объекта">
+                  <li class="property-card__param">
+                    <img src="assets/icons/bedroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>6</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/kitchen.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>2</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/bathroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>3</span>
+                  </li>
+                </ul>
+                <div class="property-card__footer">
+                  <span class="property-card__price">$4527.00</span>
+                  <button type="button" class="property-card__button" aria-label="Оставить заявку на Sequoia Real Estate">Leave request</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="properties__item">
+            <article class="property-card">
+              <img
+                src="assets/img/hom6.jpg"
+                class="property-card__image"
+                alt="Strive Partners Realty — современный многоуровневый дом"
+                width="360"
+                height="320"
+                loading="lazy"
+              />
+              <div class="property-card__content">
+                <h3 class="property-card__title">Strive Partners Realty</h3>
+                <p class="property-card__address">
+                  <img src="assets/icons/01.svg" class="property-card__address-icon" alt="" width="20" height="20" aria-hidden="true" />
+                  <span>East London</span>
+                </p>
+                <ul class="property-card__params" aria-label="Параметры объекта">
+                  <li class="property-card__param">
+                    <img src="assets/icons/bedroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>6</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/kitchen.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>2</span>
+                  </li>
+                  <li class="property-card__param">
+                    <img src="assets/icons/bathroom.svg" alt="" width="20" height="20" aria-hidden="true" />
+                    <span>3</span>
+                  </li>
+                </ul>
+                <div class="property-card__footer">
+                  <span class="property-card__price">$5527.00</span>
+                  <button type="button" class="property-card__button" aria-label="Оставить заявку на Strive Partners Realty">Leave request</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="benefits" id="benefits" aria-labelledby="benefits-title">
+      <div class="benefits__container">
+        <header class="benefits__header">
+          <h2 class="benefits__title" id="benefits-title">
+            Property Featured
+          </h2>
+          <p class="benefits__subtitle">
+            Real estate is a crowded field. But with the number of buyers purchasing homes
+            through real estate agents and brokers growing there’s plenty of
+          </p>
+        </header>
+        <div class="benefits__grid">
+          <div
+            class="benefits__column benefits__column--left"
+            aria-label="Key benefits"
+          >
+            <article class="benefits-card">
+              <img
+                src="assets/icons/Group 345.png"
+                class="benefits-card__icon"
+                alt="Shield icon for 100% security"
+                loading="lazy"
+                width="46"
+                height="46"
+              />
+              <h3 class="benefits-card__title">100% Security</h3>
+              <p class="benefits-card__description">
+                For many of us, buying a home is a dre and one not easily attainable.
+              </p>
+            </article>
+
+            <article class="benefits-card">
+              <img
+                src="assets/icons/Group 341.png"
+                class="benefits-card__icon"
+                alt="Air conditioner icon"
+                loading="lazy"
+                width="46"
+                height="46"
+              />
+              <h3 class="benefits-card__title">Free air conditioner</h3>
+              <p class="benefits-card__description">
+                For many of us, buying a home is a dre and one not easily attainable.
+              </p>
+            </article>
+
+            <article class="benefits-card">
+              <img
+                src="assets/icons/Group 343.png"
+                class="benefits-card__icon"
+                alt="Flower garden icon"
+                loading="lazy"
+                width="46"
+                height="46"
+              />
+              <h3 class="benefits-card__title">Flower garden</h3>
+              <p class="benefits-card__description">
+                For many of us, buying a home is a dre and one not easily attainable.
+              </p>
+            </article>
+          </div>
+          <div class="benefits__column benefits__column--center">
+            <figure class="benefits__image-wrapper">
+              <img
+                src="assets/img/Rectangle 134.png"
+                class="benefits__image"
+                alt="Современное стеклянное здание RubyHome"
+                loading="lazy"
+                width="362"
+                height="548"
+              />
+            </figure>
+          </div>
+          <div
+            class="benefits__column benefits__column--right"
+            aria-label="Additional benefits"
+          >
+            <article class="benefits-card">
+              <img
+                src="assets/icons/Group 347.png"
+                class="benefits-card__icon"
+                alt="Car and movers icon"
+                loading="lazy"
+                width="46"
+                height="46"
+              />
+              <h3 class="benefits-card__title">Parkers &amp; movers</h3>
+              <p class="benefits-card__description">
+                For many of us, buying a home is a dre and one not easily attainable.
+              </p>
+            </article>
+
+            <article class="benefits-card">
+              <img
+                src="assets/icons/Group 349.png"
+                class="benefits-card__icon"
+                alt="Couch icon"
+                loading="lazy"
+                width="46"
+                height="46"
+              />
+              <h3 class="benefits-card__title">Rental furniture</h3>
+              <p class="benefits-card__description">
+                For many of us, buying a home is a dre and one not easily attainable.
+              </p>
+            </article>
+
+            <article class="benefits-card">
+              <img
+                src="assets/icons/Group 351.png"
+                class="benefits-card__icon"
+                alt="Swimming pool icon"
+                loading="lazy"
+                width="46"
+                height="46"
+              />
+              <h3 class="benefits-card__title">Swimming pool</h3>
+              <p class="benefits-card__description">
+                For many of us, buying a home is a dre and one not easily attainable.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+      <div class="reviews__inner">
+        <p class="reviews__label" aria-hidden="true">REVIEWS</p>
+        <h2 class="reviews__title" id="reviews-heading">Our valuable customer says</h2>
+        <div
+          class="reviews__slider swiper"
+          role="region"
+          aria-label="Карусель отзывов клиентов"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/img/boy.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">Justin Lee</h3>
+                    <p class="review-card__position">Products Designer at Ito</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  A good real estate agent doesn't disappear once the closing is signed. Buying a bigger home doesn't necessarily mean spending more money. Been there. Done that. Sold. Bought. Bringing It All Together.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/icons/girl.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">Angel Cathe</h3>
+                    <p class="review-card__position">Products Designer at Ito</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  A good real estate agent doesn't disappear once the closing is signed. Buying a bigger home doesn't necessarily mean spending more money. Been there. Done that. Sold. Bought. Bringing It All Together.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/img/boy.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">Michael Brown</h3>
+                    <p class="review-card__position">Marketing Lead at Nexo</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  RubyHome made our relocation smooth. They understood our budget and found a perfect family home. Professional from start to finish. Highly recommend.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/icons/girl.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">Sarah Wilson</h3>
+                    <p class="review-card__position">UX Designer at Studio One</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  We sold our flat in under a month. The team was responsive and the valuation was fair. No hidden fees. Will use RubyHome again for our next move.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/img/boy.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">David Clark</h3>
+                    <p class="review-card__position">Developer at TechFlow</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  First-time buyers here. RubyHome explained every step and helped us secure a mortgage. We got the keys to our dream apartment. Thank you.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/icons/girl.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">Emma Davis</h3>
+                    <p class="review-card__position">Consultant at Bright Ideas</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  Rented an office through RubyHome. They matched our location and budget perfectly. Lease was clear and signed without delays. Great experience.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/img/boy.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">James Taylor</h3>
+                    <p class="review-card__position">Founder at StartupLab</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  Needed investment advice. RubyHome gave clear recommendations and helped us choose the right area. Our portfolio is growing. Solid partnership.
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="review-card">
+                <img
+                  src="assets/icons/girl.png"
+                  class="review-card__avatar"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+                <div class="review-card__header">
+                  <div class="review-card__author">
+                    <h3 class="review-card__name">Olivia Martinez</h3>
+                    <p class="review-card__position">HR Director at PeopleFirst</p>
+                  </div>
+                  <span class="review-card__quote" aria-hidden="true">"</span>
+                </div>
+                <p class="review-card__text">
+                  Sold our house and bought a new one with RubyHome. One agent, one process. Stress-free and transparent. We are very happy with the outcome.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div
+          class="reviews__pagination swiper-pagination"
+          aria-label="Переключение слайдов отзывов"
+        >
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active" role="button" tabindex="0" aria-label="Перейти к отзыву 1" data-index="0"></span>
+          <span class="swiper-pagination-bullet" role="button" tabindex="0" aria-label="Перейти к отзыву 2" data-index="1"></span>
+          <span class="swiper-pagination-bullet" role="button" tabindex="0" aria-label="Перейти к отзыву 3" data-index="2"></span>
+          <span class="swiper-pagination-bullet" role="button" tabindex="0" aria-label="Перейти к отзыву 4" data-index="3"></span>
+        </div>
+      </div>
+    </section>
+    <section class="cta" id="cta" aria-labelledby="cta-title">
+      <div class="cta__inner">
+        <h2 class="cta__title" id="cta-title">Get listed your home as a owner</h2>
+        <p class="cta__subtitle">
+          Here is a list of the greatest real estate company slogans of all-time. These catchy slogans are followed by the Greatest Real Estate.
+        </p>
+        <form class="cta__form" action="#" method="post" aria-label="Подписка на рассылку по email" novalidate>
+          <div class="cta__input-wrap">
+            <label for="cta-email" class="visually-hidden">Email address</label>
+            <input
+              id="cta-email"
+              class="cta__input"
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-invalid="false"
+            />
+            <button type="submit" class="cta__button" aria-label="Subscribe to newsletter">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer" role="contentinfo">
+    <div class="page-footer__inner">
+      <p class="page-footer__text">
+        © 2025 RubyHome. All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <section
+    class="request-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="request-modal-title"
+    hidden
+  >
+    <div class="request-modal__backdrop" data-request-modal-close></div>
+    <div class="request-modal__dialog" role="document">
+      <button
+        class="request-modal__close-button"
+        type="button"
+        aria-label="Close request form"
+        data-request-modal-close
+      >
+        <img
+          src="assets/img/close.png"
+          class="request-modal__close-icon"
+          alt=""
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+      </button>
+
+      <h2 class="request-modal__title" id="request-modal-title">
+        Leave a request
+        <span class="request-modal__title-accent">and we will call you soon</span>
+      </h2>
+
+      <form
+        class="request-modal__form"
+        action="#"
+        method="post"
+        novalidate
+        aria-label="Leave a request and we will call you soon"
+      >
+        <div class="request-modal__fields">
+          <div class="request-modal__field">
+            <label class="request-modal__label" for="request-name">
+              Enter name
+            </label>
+            <input
+              class="request-modal__input"
+              id="request-name"
+              type="text"
+              name="name"
+              placeholder="Example: Mark"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-invalid="false"
+            />
+            <p class="request-modal__error" id="request-name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="request-modal__field">
+            <label class="request-modal__label" for="request-phone">
+              Enter phone
+            </label>
+            <input
+              class="request-modal__input"
+              id="request-phone"
+              type="tel"
+              name="phone"
+              inputmode="tel"
+              placeholder="+7999999999"
+              required
+              aria-required="true"
+              aria-invalid="false"
+            />
+            <p class="request-modal__error" id="request-phone-error" aria-live="polite"></p>
+          </div>
+
+          <div class="request-modal__field">
+            <label class="request-modal__label" for="request-email">
+              Enter email address
+            </label>
+            <input
+              class="request-modal__input"
+              id="request-email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-invalid="false"
+            />
+            <p class="request-modal__error" id="request-email-error" aria-live="polite"></p>
+          </div>
+
+          <fieldset class="request-modal__field request-modal__field--type">
+            <legend class="request-modal__label">I want to</legend>
+            <div class="request-modal__type-group" role="radiogroup" aria-label="I want to">
+              <label class="request-modal__type-option">
+                <input
+                  class="request-modal__type-input"
+                  type="radio"
+                  name="dealType"
+                  value="buy"
+                  checked
+                />
+                <span class="request-modal__type-button">Buy</span>
+              </label>
+              <label class="request-modal__type-option">
+                <input
+                  class="request-modal__type-input"
+                  type="radio"
+                  name="dealType"
+                  value="rent"
+                />
+                <span class="request-modal__type-button">Rent</span>
+              </label>
+              <label class="request-modal__type-option">
+                <input
+                  class="request-modal__type-input"
+                  type="radio"
+                  name="dealType"
+                  value="sell"
+                />
+                <span class="request-modal__type-button">Sell</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="request-modal__field request-modal__field--checkbox">
+            <label class="request-modal__checkbox-label">
+              <input
+                class="request-modal__checkbox-input"
+                id="request-privacy"
+                type="checkbox"
+                name="privacy"
+                value="agree"
+                required
+                aria-required="true"
+              />
+              <span class="request-modal__checkbox-visual" aria-hidden="true"></span>
+              <span class="request-modal__checkbox-text">
+                I agree to
+                <a
+                  href="/privacy"
+                  class="request-modal__link"
+                  tabindex="0"
+                >
+                  Privacy Policy
+                </a>
+              </span>
+            </label>
+            <p class="request-modal__error" id="request-privacy-error" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="request-modal__actions">
+          <button
+            class="request-modal__submit"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div
+      class="request-modal__success"
+      role="status"
+      aria-live="polite"
+      aria-label="Your request has been sent"
+    >
+      <button
+        class="request-modal__close-button request-modal__close-button--success"
+        type="button"
+        aria-label="Close success message"
+        data-request-modal-close
+      >
+        <img
+          src="assets/img/close.png"
+          class="request-modal__close-icon"
+          alt=""
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+      </button>
+      <p class="request-modal__success-text">Your request has been sent</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
